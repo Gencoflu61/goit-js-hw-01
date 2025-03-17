@@ -2,7 +2,7 @@ function makeTransaction(quantity, pricePerDroid){
   // Toplam fiyatı hesapla: droid miktarı * bir droidin fiyatı
   const totalPrice = quantity * pricePerDroid;
   // Mesajı oluştur ve döndür
-  return `You ordered ${quantity} droids worth ${pricePerDroid} credits!`;
+  return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
 }
 // Testler
 console.log(makeTransaction(5, 3000)); // "You ordered 5 droids worth 15000 credits!"
